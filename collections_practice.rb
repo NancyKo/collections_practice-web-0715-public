@@ -31,3 +31,9 @@ end
 def sum_array(array)
   array.reduce(:+)
 end
+
+def add_s(array)
+  array.map do |word|
+    word == "feet" ? "feet" : word+"s"
+  end
+end 
